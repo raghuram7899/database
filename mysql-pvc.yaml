@@ -1,0 +1,12 @@
+---
+apiversion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: azure-managed-nop
+spec:
+  accessModes:
+    - ReadWriteOnce:
+  storageClassName: managed-premium
+  resources:
+    limits:
+      storage: 5Gi
